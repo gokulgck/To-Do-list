@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.background-wrapper {
+  background-image: url('../public/gym.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Make sure it covers full height */
+  background-attachment: fixed;
+
+
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: white;
+  
+}
+.container{
+  width: 90%;
+  height: 90%;
+  box-shadow:0 15px 35px rgba(0,0,0,0.5);
+  border-radius:10px;
+  background: rgba(40, 38, 38, 0.537);
+  backdrop-filter:blur(4px);
+  overflow:hidden;
+}
+
+
+/* Header */
+.header {
+    padding: 1rem;
+    background-color: #04060568;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    border-radius: 10px;
+   
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .form-section, .tasks-section {
+    margin: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    
+  }
+  
+  .task-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #191c1d;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 3px white;
+    
+  }
+  .task-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  .task-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-title {
+    font-weight: bold;
+  }
+  .form-group {
+    flex-direction: column; /* Stack input fields vertically */
+    gap: 0.8rem;
+  }
+  
+  /* .task-actions {
+    display: flex;
+    gap: 0.5rem;
+  } */
+  
+  /* Buttons */
+  .button {
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s;
+  }
+  .button:hover{
+    transform: scale(1.1);
+    
+  }
+  .submit-button {
+    background-color: #077d20;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .edit-button {
+    background-color: #ffc107;
+  }
+  
+  .update-button {
+    background-color: #09b01f;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .cancel-button {
+    background-color: #6c757d;
+  }
+  
+  .input {
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    height: 50px;
+  }
+ 
+  /* Messages */
+  .message-success {
+    color: #198754;
+  }
+  
+  .message-error {
+    color: #dc3545;
+  }
+  
+  @media (max-width: 768px) {
+    .background-wrapper {
+      background-image: url('../public/gym.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh; /* Make sure it covers full height */
+      padding: 1rem;
+      background-attachment: fixed;
+    }
+  
+    .form-group {
+      flex-direction: column; /* Stack input fields vertically */
+      gap: 0.8rem;
+    }
+  
+    .list-group-item {
+      flex-direction: column; /* Stack list items vertically */
+      align-items: flex-start;
+      padding: 1rem; /* Add some padding to make it easier to tap */
+    }
+  
+    /* Make buttons full-width on mobile */
+    .btn {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  
+    /* Adjust text size for headers */
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .task-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      background-color: #101213;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px 3px white;
+      
+    }
+    .task-actions {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+    .container{
+      width: 90%;
+      height: 90%;
+      box-shadow:0 15px 35px rgba(0,0,0,0.5);
+      border-radius:10px;
+      background: rgba(95, 92, 92, 0.05);
+      backdrop-filter:blur(4px);
+      overflow:hidden;
+    }
+    .input{
+      text-transform: uppercase;
+    }
+    .task-title{
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+  }

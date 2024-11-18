@@ -106,7 +106,7 @@ const ToDoo = () => {
     <div className="background-wrapper">
       <div className="container">
           <div className="header">
-            <h1>SET YOUR GOAL</h1>
+            <h1>SET YOUR TASK</h1>
           </div>
           <div className="form-section">
             <h3>Add Item</h3>

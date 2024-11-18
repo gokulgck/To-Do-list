@@ -7,7 +7,7 @@
   background-position: center;
   min-height: 100vh; /* Make sure it covers full height */
   background-attachment: fixed;
-
+  
 
   font-family: "Poppins", serif;
   font-weight: 400;
@@ -22,6 +22,7 @@
   background: rgba(40, 38, 38, 0.537);
   backdrop-filter:blur(4px);
   overflow:hidden;
+  margin-left: 3%;
 }
 
 
@@ -39,7 +40,10 @@
     top: 0;
     z-index: 1000;
   }
-  
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
   .form-section, .tasks-section {
     margin: 2rem;
   }
@@ -80,26 +84,37 @@
   }
   
   .task-title {
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    
+  }
+  .task-desc{
+    font-weight: 400;
+    font-size: 20px;
   }
   .form-group {
     flex-direction: column; /* Stack input fields vertically */
     gap: 0.8rem;
+    
   }
   
   /* .task-actions {
     display: flex;
     gap: 0.5rem;
   } */
-  
+  h3{
+    font-size: 30px;
+  }
   /* Buttons */
   .button {
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     border: none;
     color: white;
     cursor: pointer;
     border-radius: 5px;
     transition: 0.4s;
+    font-size: 20px;
   }
   .button:hover{
     transform: scale(1.1);
@@ -132,6 +147,7 @@
     border: 1px solid #ced4da;
     border-radius: 5px;
     height: 50px;
+    font-size: 20px;
   }
  
   /* Messages */
@@ -214,11 +230,17 @@
     }
     .task-title{
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 25px;
     }
     h1 {
       font-size: 30px;
-      text-align: center;
     }
-
+    .task-desc{
+      font-weight: 400;
+      font-size: 15px;
+    }
+    .input {
+      height: 35px;
+    }
   }
